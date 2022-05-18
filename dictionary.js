@@ -13,7 +13,6 @@ app.use('/img',express.static(__dirname + 'public/img'));
 
 
 app.get('',(req,res)=>{
-    meaningList.getMeanings('lemon');
     res.sendFile(__dirname + '/views/dict.html');
 });
 
